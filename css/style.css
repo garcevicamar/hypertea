@@ -743,6 +743,96 @@ button {
   position: absolute;
 }
 
+.hyp-djelotvornost {
+  padding: 150px 0px 160px 0px;
+  background: url(../images/natural-green-tea-leaves-500x500.png) #e7d9c7;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: right 150px;
+}
+
+.hyp-djelotvornost-max {
+  max-width: 1640px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 40px;
+  margin: 0 auto;
+}
+
+.hypdj-top {
+  max-width: 70%;
+}
+
+.hypdj-title {
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.hypdj-text {
+  font-size: 36px;
+  padding-top: 50px;
+}
+
+.hypdj-rez-top {
+  position: absolute;
+  padding: 20px 50px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #adc355;
+  margin-top: 50px;
+}
+
+.rezist {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+.hypdj-rez-bot {
+  background-color: #efdec8;
+  margin-top: 130px;
+  border: 3px solid #cab79e;
+  border-radius: 0px 20px 20px 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 12px 16px 20px 3px rgb(103 71 33 / 28%);
+}
+
+.hyrzb-title {
+  font-size: 51px;
+  color: #2c2c2c;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.hyrzb-bigsmall {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hyrzb-bigbig {
+  font-size: 45px;
+}
+
+.hyrzb-small1 {
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+.hyrzb-small2 {
+  font-size: 35px;
+  padding-left: 45px;
+}
+
+.peoplebot {
+  padding-bottom: 30px;
+}
+
 /* RESPONSIVE */
 
 
@@ -1377,8 +1467,17 @@ button {
   .pregledajtese-imgwrapperman {
     display: none;
   }
+
   .hypm-doktorright {
     display: none;
+  }
+
+  .hypm-text {
+    width: 100%;
+  }
+
+  .hypm-doktorsign {
+    width: 100%;
   }
 }
 
@@ -1470,6 +1569,76 @@ button {
     padding: 0px 10px;
   }
 
+  .hypm-title {
+    font-size: 30px;
+  }
+
+  .hypm-text {
+    font-size: 20px;
+  }
+
+  .hypm-doktorsign {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .hypmisljenje-max{
+    padding: 0 10px;
+  }
+
+  .hypmisljenje{
+    padding: 100px 0px 100px 0px;
+  }
+
+  .hypdj-title{
+    font-size: 30px;
+  }
+
+  .hypdj-text{
+    font-size: 20px;
+  }
+
+  .hyp-djelotvornost{
+    background: #e7d9c7;
+  }
+  .hyp-djelotvornost-max{
+    padding: 0px 10px;
+  }
+  .hypdj-top{
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  .hypdj-rez-top{
+    padding: 10px 20px;
+  }
+  .hypdj-rez-bot{
+    width: 100%;
+  }
+  .rezist{
+    font-size: 20px;
+  }
+  .hyrzb-title{
+    font-size: 30px;
+  }
+  .peoplebot{
+    max-width: 50%;
+  }
+  .hyrzb-bigbig{
+    font-size: 22px;
+  }
+  .hyrzb-small1{
+    font-size: 14px;
+  }
+  .hyrzb-small2 {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+  .hyrzb-tltl-hy{
+    padding-top: 50px;
+  }
+  .hypdj-rez-bot{
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -1486,7 +1655,10 @@ button {
     text-align: center;
     margin-left: 0px;
   }
+
 }
+
+
 
 @media only screen and (max-width: 280px) {
   .header-cta-wrapper {
@@ -1534,6 +1706,31 @@ button {
 
   .hyp-card {
     height: 500px;
+  }
+
+  .hyrzb-bigsmall{
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hyrzb-small1, .hyrzb-small2{
+    padding-left: 0px;
+  }
+
+  .hypdj-rez-bot{
+    word-wrap: break-word;
+  }
+
+  .hyrzb-title {
+    word-wrap: break-word;
+  }
+
+  .hypdj-rez-bot{
+    padding: 5px;
+  }
+  .hyp-djelotvornost-max{
+    padding: 5px;
   }
 }
 
@@ -1604,5 +1801,11 @@ button {
 @media only screen and (min-width: 480px) and (max-width: 600px) {
   .hyp-card-body-p {
     font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+  .hypdj-rez-bot{
+    margin-top: 90px;
   }
 }
