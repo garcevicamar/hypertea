@@ -392,6 +392,8 @@ button {
   flex-direction: column;
   justify-content: space-between;
   padding: 0px 40px;
+  margin: 0 auto;
+
 }
 
 .pregledajtese .pregledajtese-heading h2 {
@@ -433,18 +435,19 @@ button {
 }
 
 .pregledajtese-imgwrapperman {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  text-align: end;
+  align-self: flex-end;
+  justify-items: right;
   justify-content: flex-end;
-  align-items: flex-end;
-  overflow: hidden;
+  position: absolute;
+  margin-top: -700px;
 }
 
 .pregledajtese-imgwrapperman .pregledajtese-imgman {
   max-height: 750px;
   min-height: 500px;
   position: absolute;
-  margin-top: px;
   right: 0;
   z-index: 5;
 }
@@ -497,11 +500,12 @@ button {
 }
 
 .whyhipertenzija {
-  padding: 100px 0px 150px 0px;
+  padding: 100px 0px 20px 0px;
   background-image: url("../images/whybg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin: 0 auto;
 }
 
 .whyhipertenzija-max {
@@ -511,6 +515,7 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px 40px;
+  margin: 0 auto;
 }
 
 .whh-title {
@@ -577,6 +582,167 @@ button {
   word-wrap: break-word
 }
 
+.epoh {
+  padding: 150px 0px 150px 0px;
+  background-image: url("../images/epoh-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.epoh-max {
+  max-width: 1640px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 40px;
+  margin: 0 auto;
+
+}
+
+.epoh-title {
+  font-size: 60px;
+  max-width: 80%;
+  color: #f7f7f7;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.epoh-body {
+  text-align: center;
+  color: #f7f7f7;
+  font-size: 36px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.hypuklanja {
+  padding: 150px 0px 150px 0px;
+  background-image: url("../images/list_desno.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.hypuklanjamax {
+  max-width: 1640px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 40px;
+  margin: 0 auto;
+}
+
+.hypuklanja-title {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hyp-card-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  align-items: stretch;
+}
+
+.hyp-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding-left: 0px;
+  margin-top: 150px;
+  background-color: #adc355;
+  border-radius: 20px;
+  z-index: 10;
+  box-shadow: 12px 16px 20px 3px rgb(103 71 33 / 28%);
+  margin-left: 50px;
+  height: 500px;
+}
+
+.hyp-card-body {
+  padding: 10px;
+  background-color: #c6d489;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 40px;
+  margin-left: 3px;
+  margin-right: 3px;
+  height: 91%;
+}
+
+.hyp-card-title {
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 36px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.hyp-card-body-p {
+  font-size: 28px;
+  text-align: center;
+}
+
+.imgtop {
+  position: absolute;
+  margin-top: -145px;
+  margin-left: 80px;
+}
+
+.hypmisljenje {
+  padding: 150px 0px 160px 0px;
+  background-image: url("../images/misljenje-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hypmisljenje-max {
+  max-width: 1640px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 40px;
+  margin: 0 auto;
+}
+
+.hypm-title {
+  font-size: 60px;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.hypm-text {
+  width: 60%;
+  padding-top: 40px;
+}
+
+.hypm-doktorsign {
+  width: 60%;
+  text-align: right;
+  font-weight: 500;
+}
+
+.hypm-text,
+.hypm-doktorsign {
+  font-size: 36px;
+}
+
+.hypm-doktorright {
+  width: 100%;
+  text-align: end;
+  align-self: flex-end;
+  justify-items: right;
+  justify-content: flex-end;
+  position: absolute;
+}
+
 /* RESPONSIVE */
 
 
@@ -596,6 +762,14 @@ button {
 
   .heroelement-title {
     font-size: 25px;
+  }
+
+  .hyp-card-title {
+    font-size: 25px;
+  }
+
+  .hyp-card-body-p {
+    font-size: 18px;
   }
 }
 
@@ -669,17 +843,8 @@ button {
     font-size: 25px;
   }
 
-  .whyhipertenzija-max{
+  .whyhipertenzija-max {
     padding: 0 15px;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .header-cta {
-    color: #38393f;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 5px 10px;
   }
 }
 
@@ -724,7 +889,38 @@ button {
   .photomiddleimg {
     max-width: 300px;
   }
+
+  .epoh-title {
+    font-size: 25px;
+    word-wrap: break-word;
+    width: 100%;
+  }
+
+  .epoh-body {
+    font-size: 20px;
+    word-wrap: break-word;
+    width: 100%;
+  }
+
+  .epoh-max {
+    padding: 0px 10px;
+  }
 }
+
+@media only screen and (max-width: 390px) {
+  .header-cta {
+    color: #38393f;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+
+  .epoh-body {
+    font-size: 14px;
+  }
+}
+
+
 
 @media only screen and (min-width: 490px) and (max-width: 530px) {
   .photomiddle {
@@ -997,37 +1193,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 215px) {
 
-  .heroelement-title,
-  .heroelement-subtitle {
-    padding: 0px 10px;
-  }
-
-  .heroelement-title {
-    font-size: 20px
-  }
-
-  .heroelement-subtitle {
-    font-size: 17px
-  }
-
-  .header-wrapper {
-    height: 13vh
-  }
-
-  .hero-element {
-    padding-top: 10px
-  }
-
-  .photomiddle {
-    margin-top: 330px
-  }
-
-  .photomiddleimg {
-    max-width: 150px
-  }
-}
 
 @media only screen and (max-width: 545px) {
   .box-text {
@@ -1037,7 +1203,7 @@ button {
   .column {
     margin-top: 5px
   }
-  
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -1100,6 +1266,10 @@ button {
 @media only screen and (min-width: 120em) and (min-width: 160em) {
   .formaroba-leftside {
     margin-left: 100px
+  }
+
+  .tealeftwrapper {
+    width: 600px;
   }
 }
 
@@ -1177,17 +1347,22 @@ button {
   .formaroba-rightside {
     max-width: 80%
   }
-  .whh-title{
+
+  .whh-title {
     font-size: 27px;
     font-weight: 500;
   }
-  .whh-body, .whh-body2{
+
+  .whh-body,
+  .whh-body2 {
     font-size: 20px;
   }
-  .whh-body2{
+
+  .whh-body2 {
     margin-top: 5px;
   }
-  .whh-ww{
+
+  .whh-ww {
     word-wrap: break-word;
   }
 }
@@ -1200,6 +1375,9 @@ button {
 
 @media only screen and (max-width: 1400px) {
   .pregledajtese-imgwrapperman {
+    display: none;
+  }
+  .hypm-doktorright {
     display: none;
   }
 }
@@ -1228,17 +1406,85 @@ button {
     font-size: 16px;
   }
 
-  .whh-donjibox-bottom{
+  .whh-donjibox-bottom {
     padding: 30px 15px;
   }
 
-  .whh-donjibox-title{
+  .whh-donjibox-title {
     padding: 60px 15px 30px 15px;
     font-size: 21px;
   }
 
-  .whh-dt-msg{
+  .whh-dt-msg {
     font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 200px) {
+  .logo-wrapper img {
+    height: 20px;
+  }
+
+  .pts-donjibox-square {
+    margin-left: 30px;
+  }
+
+  .snizenacijena {
+    padding-left: 10px;
+  }
+
+  .snizenacijena h3,
+  .punacijena h3 {
+    font-size: 20px;
+  }
+
+  #forma-ime,
+  #forma-broj,
+  #forma-naruci,
+  #kolicina {
+    max-width: 100%;
+  }
+
+  #forma-naruci {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .pk55 {
+    word-break: break-word;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hyp-card {
+    margin: 100px auto;
+    height: 300px;
+  }
+
+  .hypuklanja-title {
+    font-size: 30px;
+  }
+
+  .hypuklanjamax {
+    padding: 0px 10px;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .imgtop {
+    width: 97%;
+    text-align: center;
+    margin-left: 0px;
   }
 }
 
@@ -1285,32 +1531,78 @@ button {
     height: 12px;
     width: 16px;
   }
+
+  .hyp-card {
+    height: 500px;
+  }
 }
 
-@media only screen and (max-width: 200px) {
-  .logo-wrapper img {
-    height: 20px;
+
+
+@media only screen and (max-width: 992px) {
+  .hyp-card {
+    max-width: 700px;
+    margin: 150px auto;
   }
 
-  .pts-donjibox-square {
-    margin-left: 30px;
+  .imgtop {
+    margin-left: 0px;
+    width: 97%;
+    text-align: center;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 215px) {
+
+  .heroelement-title,
+  .heroelement-subtitle {
+    padding: 0px 10px;
   }
 
-  .snizenacijena{
-    padding-left: 10px;
+  .heroelement-title {
+    font-size: 20px
   }
 
-  .snizenacijena h3, .punacijena h3{
-    font-size: 20px;
+  .heroelement-subtitle {
+    font-size: 17px
   }
-  #forma-ime, #forma-broj, #forma-naruci, #kolicina{
-    max-width: 100%;
+
+  .header-wrapper {
+    height: 13vh
   }
-  #forma-naruci{
-    font-size: 20px;
-    padding: 10px;
+
+  .hero-element {
+    padding-top: 10px
   }
-  .pk55{
-    word-break: break-word;
+
+  .photomiddle {
+    margin-top: 330px
+  }
+
+  .photomiddleimg {
+    max-width: 150px
+  }
+
+  .hyp-card {
+    max-width: 120px;
+    word-wrap: break-word;
+    height: 700px;
+  }
+
+  .imgtop {
+    margin-left: -30px;
+    margin-top: -50px;
+    width: 100%;
+  }
+
+  .imgtop img {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .hyp-card-body-p {
+    font-size: 14px;
   }
 }
